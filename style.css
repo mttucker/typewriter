@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+    background: #333 url('lssvx.jpeg') no-repeat center center / cover;
+    position: relative;
+    color: red;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+body * {
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 3rem;
+}
+
+h1, h2 {
+    font-weight: 200;
+    margin: 0.4rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin: 35px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10rem;
+    font-size: 25px;
+    color: #fff;
+    background: rgba(70,130,180,0.3);
+    padding: 13px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: steelblue;
+    color: #fff;
+}
+
+/* Cursor */
+.txt-type > .txt {
+    border-right: 0.2rem solid red;
+}
+
+@media(min-width: 1200px) {
+    h1 {
+        font-size: 5rem;
+        align-items: center;
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+
